@@ -6,4 +6,7 @@ RUN pip install -r requirements.txt
 
 COPY . /code/
 
+EXPOSE "5000:5000"
+EXPOSE "80:80"
+
 CMD ["python", "app.py"]

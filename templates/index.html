@@ -1,0 +1,26 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+<h1>Good Links</h1>
+<hr>
+
+<form action="/add" method="post" name="add">
+<div>
+    Enter address:
+    <input type="text" name="address" size=50 required placeholder="address" />
+    Enter description:
+    <input type="text" name="desc" size=80 placeholder="description">
+    <input type="submit" name="submit" value="submit">
+</div>
+
+</form>
+
+<hr>
+
+{% if links %}
+we have links
+{% else %}
+no links provided
+{% endif %}
+
+<hr>
