@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # python app to support list of userful web links
-# myke 2019-01-27 0.1
+# myke 2019-01-27 0.2
 
-from flask import Flask
+from flask import Flask, url_for, render_template
 
 app = Flask (__name__)
 
