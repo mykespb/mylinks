@@ -18,7 +18,18 @@
 <hr>
 
 {% if links %}
-we have links
+we have links:
+
+<ul>
+{% for link in links %}
+
+<li>
+    {{ link }} = {{ links[link]['title'] }} = {{ links[link]['desc'] }}
+</li>
+
+{% endfor %}
+</ul>
+
 {% else %}
 no links provided
 {% endif %}
