@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # python app to support list of userful web links
-# myke 2019-01-28 0.4
+# myke 2019-01-28 1.1
 
 from flask import Flask, url_for, render_template, request
 import requests
@@ -31,10 +31,10 @@ def add ():
     links [address] = {'title' : title, 'desc' : desc}
     return render_template("index.html", links=links)
 
-def getpage_httplib (address):
-    hl = httplib2.Http(".cache")
-    headers, text = hl.request (address, "GET")
-    return text
+# def getpage_httplib (address):
+#     hl = httplib2.Http(".cache")
+#     headers, text = hl.request (address, "GET")
+#     return text
 
 def getpage_requests (address):
     #session = requests.Session()
