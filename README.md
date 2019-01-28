@@ -14,8 +14,10 @@ You will see all the list at every reload.
 Installation
 ------------------------------------------
 
-Use docker-compose up.
-
+Use 
+```
+docker-compose up -- build
+```
 
 Details
 ------------------------------------------
